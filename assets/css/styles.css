@@ -1,5 +1,62 @@
 /* styles.css */
 
-* {
-	font-family: Arial;
+html {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	margin: 1em;
+	background-color: black;
+	color: whitesmoke;
+	font-size: 5rem;
+	overflow: hidden;
+	background-image: url("../img/flames.gif");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.grid-container {
+	display: grid;
+	/* grid-template-columns: 1fr 1fr 1fr; */
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	gap: 2rem;
+	margin: 10% 4rem 0 4rem;
+}
+
+
+div {
+	transition-property: transform;
+	transition-duration: 3s;
+}
+
+.last {
+	/*animation-name: growAndGlow;
+	animation-duration: 3s;
+	/*transform: skew(30deg,30deg);*/
+	padding-bottom: 2rem;
+	border-bottom: 2px solid rgb(220,200,180);
+}
+/*
+.last:hover {
+	animation-name: growAndGlow;
+	animation-duration: 3s;
+}
+*/
+/*
+@keyframes growAndGlow {
+	from {
+		color: whitesmoke;
+	}
+
+	50% {
+		transform: skew(30deg,30deg);
+		color: dodgerblue;
+	}
+
+	to {
+		transform: scale(3);
+		color: red;
+	}
 }
