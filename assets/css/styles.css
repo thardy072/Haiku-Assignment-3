@@ -34,7 +34,7 @@ div {
 .last {
 	animation-name: growAndGlow;
 	animation-duration: 3s;
-	transform: skew(30deg,30deg);
+	/*transform: skew(30deg,30deg);*/
 	padding-bottom: 2rem;
 	border-bottom: 2px solid rgb(220,200,180);
 }
